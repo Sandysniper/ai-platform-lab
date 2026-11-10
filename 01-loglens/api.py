@@ -1,6 +1,8 @@
+from typing import Literal
+
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
-from typing import Literal
+
 
 class LogEntry(BaseModel):
     user: str
